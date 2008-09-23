@@ -1,8 +1,8 @@
 (prefer-coding-system 'utf-8)
 
 (require 'cl)
-(setq user-full-name "Bjørn Arild Mæland"
-      user-mail-address "bjorn.maeland@gmail.com"
+(setq user-full-name "Jesse Andrews"
+      user-mail-address "anotherjesse@gmail.com"
       inhibit-startup-message t ;; Remove splash screen
       ispell-program-name "aspell"
       ispell-dictionary "english"
@@ -21,7 +21,7 @@
       snippet-dir "~/foss/snippets/"
       server-window #'switch-to-buffer-other-frame
       vc-follow-symlinks nil
-      twittering-username "Chrononaut"
+      twittering-username "anotherjesse"
       display-time-string-forms '(
                                   (propertize
                                    (concat " " 24-hours ":" minutes ", " day "." month " ")
@@ -33,7 +33,7 @@
       jabber-server "gmail.com"
       jabber-network-server "talk.google.com"
       jabber-port 5223
-      jabber-username "bjorn.maeland")
+      jabber-username "anotherjesse")
 
 (setq-default fill-column 80 ;; how wide the screen should be before word wrapping
               indent-tabs-mode nil
@@ -164,6 +164,8 @@
 
 (autoload 'ruby-mode "ruby-mode" "Ruby editing mode." t)
 (add-to-list 'auto-mode-alist '("\.rb$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("\.rake$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("\.builder$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Rakefile" . ruby-mode))
 (add-to-list 'interpreter-mode-alist '("ruby" . ruby-mode))
 
