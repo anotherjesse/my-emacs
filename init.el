@@ -120,7 +120,6 @@
 (setq magic-mode-alist
       (cons '("<＼＼?xml " . nxml-mode)
             magic-mode-alist))
-(fset 'xml-mode 'nxml-mode)
 
 (setq tramp-default-method "ssh")
 
