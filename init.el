@@ -135,6 +135,7 @@
   (load autoload-file))
 
 ;; Autoloads
+
 (autoload 'git-blame-mode "git-blame" "Minor mode for incremental blame for Git." t)
 
 (autoload 'sml-mode "sml-mode" "Major mode for editing ML programs." t)
@@ -154,6 +155,9 @@
 
 (autoload 'php-mode "php-mode" "PHP Editing mode." t)
 (add-to-list 'auto-mode-alist '("\.php$" . php-mode))
+
+(autoload 'css-mode "css-mode" "CSS Editing mode." t)
+(add-to-list 'auto-mode-alist '("\.css$" . css-mode))
 
 ;;(autoload 'js2-mode "js2" nil t)
 ;;(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
@@ -217,9 +221,3 @@
 
 ;; Display gtd when emacs starts, instead of *scratch*
 (if (file-exists-p "~/notat/gtd.org") (find-file "~/notat/gtd.org"))
-(custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- )
