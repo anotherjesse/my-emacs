@@ -86,6 +86,7 @@
 ;; Load paths
 (add-to-list 'load-path "~/.emacs.d/")
 (add-to-list 'load-path "~/.emacs.d/sml-mode")
+(add-to-list 'load-path "~/.emacs.d/magit")
 
 (when (file-directory-p "~/foss/emacs-jabber-0.7.1")
   (add-to-list 'load-path "~/foss/emacs-jabber-0.7.1")
@@ -159,8 +160,8 @@
 (autoload 'css-mode "css-mode" "CSS Editing mode." t)
 (add-to-list 'auto-mode-alist '("\.css$" . css-mode))
 
-;;(autoload 'js2-mode "js2" nil t)
-;;(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+(autoload 'js2-mode "js2" nil t)
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
@@ -185,6 +186,8 @@
   "python" "Python editing mode." t)
 
 (autoload 'slime-selector "slime" t)
+
+(require 'magit)
 
 (require 'pastie)
 (require 'idle-highlight)
