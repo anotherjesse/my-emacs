@@ -1,5 +1,8 @@
 (prefer-coding-system 'utf-8)
 
+(require 'ido)
+(ido-mode t)
+
 (require 'cl)
 (setq user-full-name "Jesse Andrews"
       user-mail-address "anotherjesse@gmail.com"
@@ -87,6 +90,7 @@
 (add-to-list 'load-path "~/.emacs.d/")
 (add-to-list 'load-path "~/.emacs.d/sml-mode")
 (add-to-list 'load-path "~/.emacs.d/magit")
+
 
 (when (file-directory-p "~/foss/emacs-jabber-0.7.1")
   (add-to-list 'load-path "~/foss/emacs-jabber-0.7.1")
@@ -209,6 +213,7 @@
 (require 'my-skeletons)
 (require 'my-bindings)
 (require 'my-aliases)
+(require 'my-htmlize)
 (require 'my-hooks)
 
 (if (eq window-system 'mac)
