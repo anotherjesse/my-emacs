@@ -68,7 +68,7 @@
 
 (when (bound-and-true-p window-system)
   (global-hl-line-mode t)
-  (set-face-background 'hl-line "#232323"))
+  (set-face-background 'hl-line "#dddddd"))
 
 (if (fboundp 'blink-cursor-mode) (blink-cursor-mode 0)) ;; No blinking cursor!
 (menu-bar-mode (if window-system 1 -1))
@@ -215,6 +215,9 @@
 (require 'my-aliases)
 (require 'my-htmlize)
 (require 'my-hooks)
+
+(require 'erlang-mode-config)
+(require 'flymake_config)
 
 (if (eq window-system 'mac)
     (load "~/.emacs.d/osx.el")
